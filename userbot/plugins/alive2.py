@@ -23,31 +23,30 @@ async def amireallyalive(alive):
     if alive.reply_to_msg_id:
         reply_to_id = await alive.get_reply_message()
     if CAT_IMG:
-         cat_caption  = f"__**༄ MY BOT IS RUNNING SUCCESFULLY ༄**__\n\n"
-         cat_caption += f"**✧✧ Database :** `Functioning normally!`\n"   
-         cat_caption += f"**✧✧ Telethon version :** `{version.__version__}\n`"
-         cat_caption += f"**✧✧ Catuserbot Version :** `{catversion}`\n"
-         cat_caption += f"**✧✧ Python Version :** `{python_version()}\n\n`"
-         cat_caption += f"**ღ** __**Cat**__🐱 __**is always with you, my master ღ\n\n**__"
-         cat_caption += f"**✧✧ My peru Master:** [{DEFAULTUSER}]({USERNAME})\n"
-         cat_caption += f"**✧✧ Uptime :** `{uptime}\n`"
-         cat_caption += f"**✧✧ Contact [Hatake Kakashi](@kakashi_robot) For notes**\n\n"
-         cat_caption +=	f"           **ღ** __**[DEPLOY MY REPO]**__(https://github.com/Jisan09/catuserbot) **ღ**"
-         await borg.send_file(alive.chat_id, CAT_IMG, caption=cat_caption, reply_to=reply_to_id)
+          cat_caption  = f"🚴‍♂️**MY BOT IS RUNNING SUCCESFULLY**\n\n"
+         cat_caption += f"**Database Status: Databases Functioning Normally!**\n"   
+         cat_caption += f"⏳`Telethon Version:` **{version.__version__}**\n"
+         cat_caption += f"⏳`Python Version:` **{python_version()}**\n"
+         cat_caption += f"⏳`CatUserbot Version:` **{catversion}**\n"
+         cat_caption += f"⏳`Cat Uptime:` **{uptime}**\n\n"         
+         cat_caption += f"**Cat is Always With You, My Masters!**\n"
+         cat_caption += f"⏳`Owner Name:` {DEFAULTUSER}\n"   
+         cat_caption += f"⏳`Modified by:` [ԹԺՐԹՐ #̸M̸a̸s̸k̸ G̸a̸n̸g̸](t.me/AdrarHussain)\n\n"         
+         cat_caption += f"**[⚜️DEPLOY CATUSERBOT⚜️](https://github.com/Adrarofficial/catuserbot)**"
+         await borg.send_file(alive.chat_id, CAT_IMG, caption=cat_caption)
          await alive.delete()
     else:
-        await alive.edit(f"__**༄ MY BOT IS RUNNING SUCCESFULLY ༄**__\n\n"
-                         "**✧✧ Database :** `Functioning normally!`\n"   
-                         f"**✧✧ Telethon version :** `{version.__version__}\n`"
-                         f"**✧✧ Catuserbot Version :** `{catversion}`\n"
-                         f"**✧✧ Python Version :** `{python_version()}\n\n`"
-                         "**ღ** __**Cat**__🐱 __**is always with you, my master ღ\n\n**__"
-                         f"**✧✧ My peru Master:** [{DEFAULTUSER}]({USERNAME})\n"
-                         f"**✧✧ Uptime :** `{uptime}\n`"
-                         f"**✧✧ Contact [Hatake Kakashi](@kakashi_robot) For notes**\n\n"
-                         f"           **ღ** __**[DEPLOY MY REPO]**__(https://github.com/Jisan09/catuserbot) **ღ**"
-                        )         
-
+        await alive.edit("🚴‍♂️**MY BOT IS RUNNING SUCCESFULLY**\n\n"
+                         "**Database Status: Databases Functioning Normally!**\n"
+                         f"⏳`Telethon Version:` **{version.__version__}**\n"
+                         f"⏳`Python Version:` **{python_version()}**\n"
+                         f"⏳`Catuserbot Version:` **{catversion}**\n"
+                         f"⏳`Cat Uptime:` **{uptime}**\n\n"                        
+                         "**Cat is Always With You, My Masters!**\n"                                                
+                         f"⏳`Owner Name:` {DEFAULTUSER}\n"
+                         "⏳`Modified by:` [ԹԺՐԹՐ #̸M̸a̸s̸k̸ G̸a̸n̸g̸](t.me/AdrarHussain)\n\n"
+                         f"**[⚜️DEPLOY CATUSERBOT⚜️](https://github.com/Adrarofficial/catuserbot)**"
+                        )
 
 CMD_HELP.update({"alive": "`.alive` :\
       \nUSAGE: Type .live to see wether your bot is working or not. "
